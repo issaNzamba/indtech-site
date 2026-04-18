@@ -7,11 +7,11 @@
 }
 
 .header {
-width: 100%;
-height: 100vh;
-background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.5)), url(/images/banner.png);
-background-position: center;
-background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)), url(/images/banner.png);
+    background-position: center;
+    background-size: cover;
 }
 
 .text_logo {
@@ -20,23 +20,22 @@ background-size: cover;
 }
 
 
-.img_logo {
-width: 90px;
-}
-
 .nav-item {
-margin: 0px 5px;
+    margin: 0px 5px;
+
 }
 
 .nav-link {
-font-size: 14px;
-font-weight: 500;
-color:rgba(255, 255, 255, 0.899);
-transition: 0.2s ease-in-out;   
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.899);
+    transition: 0.2s ease-in-out;
+    font-weight: bold;
+
 }
 
 .nav-link:hover {
-    color: yellowgreen;
+    color: rgb(0, 0, 0);
 }
 
 .nav-btn {
@@ -71,13 +70,6 @@ transition: 0.2s ease-in-out;
     flex-direction: column;
 }
 
-.img_box_container {
-    width: 140px;
-    height: 140px;
-    background-image: url(/images/image.png);
-    background-position: center;
-    background-size: cover;
-}
 
 .heading_home {
     font-size: 52px;
@@ -101,10 +93,11 @@ transition: 0.2s ease-in-out;
 }
 
 .icon_home {
-    color: rgb(240, 133, 133);
+    color: rgb(0, 0, 0);
     font-size: 21px;
     margin: 0px 8px;
     cursor: pointer;
+
 }
 
 .btn_home {
@@ -183,7 +176,7 @@ body {
     margin: 0px;
 }
 
-.about_2{
+.about_2 {
     padding: 19px 36px;
     margin-bottom: 9px;
 }
@@ -293,7 +286,8 @@ body {
     margin-bottom: 22px;
     height: 11px;
 }
-.progress-bar{
+
+.progress-bar {
     background-color: rgb(0, 126, 184);
 }
 
@@ -306,7 +300,7 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
 }
 
 .heading_service_title {
@@ -349,8 +343,9 @@ body {
 .content_services:hover {
     transform: translate(-10px);
     background-color: #0b0b20;
-    
+
 }
+
 .icon_service {
     width: 42px;
     margin-bottom: 5px;
@@ -393,7 +388,7 @@ body {
     text-align: center;
 }
 
-.content_testimonials{
+.content_testimonials {
     padding: 30px 20px 80px 150px;
 }
 
@@ -405,7 +400,7 @@ body {
     background-size: cover;
 }
 
-.content_testimonials_2{
+.content_testimonials_2 {
     padding: 30px 150px 80px 20px;
 }
 
@@ -415,7 +410,7 @@ body {
     align-items: center;
 }
 
-.img_container_testimonial_2{
+.img_container_testimonial_2 {
     width: 70px;
     height: 70px;
     background-image: url(/images/momo.png);
@@ -428,14 +423,14 @@ body {
     color: rgb(202, 0202, 7);
 }
 
-.name_client{
+.name_client {
     font-size: 18px;
     font-weight: 500;
     color: white;
     margin: 6px 0px;
 }
 
-.para_content_testimonial{
+.para_content_testimonial {
     font-size: 15px;
     color: rgba(225, 255, 255, 0.7);
     font-weight: 400;
