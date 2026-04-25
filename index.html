@@ -1,568 +1,361 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porfolio | NDI</title>
+    <meta name="description" content="Ingénieur DevOps - Services IT pour PME et startups africaines">
+    <meta name="author" content="Issa NZAMBA">
+    <title>Issa NZAMBA | Ingénieur DevOps</title>
 
-    <!-- fonts -->
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400
-    rel=" stylesheet">
-
-    <!-- font awesome (icons) -->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <!-- Bootstrap links -->
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- CSS links -->
     <link rel="stylesheet" href="/style/style.css">
+
 </head>
 
 <body>
-    <!-- Header -->
-    <nav class="navbar bg-primary fixed-top navbar-expand-lg">
-        <div class="container-md">
 
-            <a class="navbar-brand text_logo" href="#">afridevops</a>
-
-            <!-- Bouton toggle (mobile) -->
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">afridevops</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto d-flex align-items-center ">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Accueil">Accueil</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Apropos">A propos</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Competences">Compétences</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Services">Services</a>
-                    </li>
-
-                    <li class="nav-item ">
-                        <a href="https://github.com/issaNzamba" target="_blank">
-                            <i class="fab icon_home fa-github"></i>
-                        </a> <a href="https://www.linkedin.com/in/issa-nzamba-399a47291" target="_blank">
-                            <i class="fab icon_home fa-linkedin"></i>
-                        </a>
-                    </li>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#competences">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
+                <div class="social-icons">
+                    <a href="https://github.com/issaNzamba" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/issa-nzamba-399a47291" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://youtube.com/@issanzamba" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
             </div>
-
         </div>
     </nav>
 
-    <div class="header">
-        <!-- Navbar -->
-        <div class="home_section">
-            <div class="container">
-                <div class="container_content_home">
-                    <h1 class="heading_home">Partenaire des PME et startups africaines.
-                    </h1>
-                    <h4 class="heading_title">Issa NZAMBA, Ingénieur de Conception & Developpement
-
-                    </h4>
-                    <a class="nav-btn btn btn-light ms-1" href="mailto:nzambaissa68@protonmail.com">
-                        Contactez-nous
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    </div>
-
-    <!-- Header -->
-
-    <!-- About -->
-    <section class="about">
-        <div class="about_headings">
-            <span><img src="/images/bubble.png" class="img_icon_about" alt="bubble_img"></span>
-            <h3 class="heading_title_about" id="Apropos">Qui suis-je ?</h3>
-            <h2 class="heading_about">A PROPOS DE MOI</h2>
-        </div>
-
+    <!-- HERO SECTION -->
+    <section id="accueil" class="hero">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-12">
-                    <div class="content_about">
-                        <div class="about_1">
-                            <div class="row">
-                                <div class="col-lg-3 col-md-2 col-3">
-                                    <h4 class="about_data">Nom : </h4>
-                                </div>
-                                <div class="col-lg-9 col-md-10 col-9">
-                                    <h4 class="about_data">Issa NZAMBA</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="about_2">
-                            <div class="row">
-                                <div class="col-lg-3 col-md-2 col-3">
-                                    <h4 class="about_data">Résidense : </h4>
-                                </div>
-                                <div class="col-lg-9 col-md-10 col-9">
-                                    <h4 class="about_data">Sénégal</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="about_1">
-                            <div class="row">
-                                <div class="col-lg-3 col-md-2 col-3">
-                                    <h4 class="about_data">Email : </h4>
-                                </div>
-                                <div class="col-lg-9 col-md-10 col-9">
-                                    <h4 class="about_data">nzambaissa68@protonmail</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="about_2">
-                            <div class="row">
-                                <div class="col-lg-3 col-md-2 col-3">
-                                    <h4 class="about_data">Experience : </h4>
-                                </div>
-                                <div class="col-lg-9 col-md-10 col-9">
-                                    <h4 class="about_data">3 ans</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="about_1">
-                            <div class="row">
-                                <div class="col-lg-3 col-md-2 col-3">
-                                    <h4 class="about_data">Nationalité : </h4>
-                                </div>
-                                <div class="col-lg-9 col-md-10 col-9">
-                                    <h4 class="about_data">Gabonaise</h4>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="about_2">
-                            <div class="row">
-                                <div class="col-lg-3 col-md-2 col-3">
-                                    <h4 class="about_data">Profession :</h4>
-                                </div>
-                                <div class="col-lg-9 col-md-10 col-9">
-                                    <h4 class="about_data">Informaticien</h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 col-12">
-                    <div class="image_container_about">
-                        <div class="image_box_about">
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="boxes_container_about">
-                    <div class="row d-flex justify-content-center w-100">
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
-                            <div class="box_1_about">
-                                <h2 class="number">45%</h2>
-                                <span class="skill_about">Programmation</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
-                            <div class="box_1_about">
-                                <h2 class="number">75%</h2>
-                                <span class="skill_about">SysAdmin</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
-                            <div class="box_1_about">
-                                <h2 class="number">60%</h2>
-                                <span class="skill_about">Administrateur Reseaux</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-12 d-flex justify-content-center">
-                            <div class="box_1_about">
-                                <h2 class="number">80%</h2>
-                                <span class="skill_about">Bureautique</span>
-                            </div>
-                        </div>
+                <div class="col-lg-8">
+                    <h1>Partenaire des PME <span class="highlight">&</span> startups africaines</h1>
+                    <p>Issa NZAMBA, Ingénieur de Conception & Développement DevOps</p>
+                    <div>
+                        <a href="mailto:nzambaissa68@protonmail.com" class="btn btn-primary-custom btn-custom">Contactez-moi</a>
+                        <a href="#services" class="btn btn-outline-custom btn-custom">Découvrir mes services</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- About -->
 
-    <section class="skills">
-        <div class="heading_skills_container">
-            <h2 class="heading_skill" id="Competences">Competences</h2>
-            <h4 class="heading_skill_about">Mes Services & Expertises</h4>
-        </div>
-
+    <!-- ABOUT SECTION -->
+    <section id="apropos">
         <div class="container">
-            <div class="row">
+            <div class="section-header">
+                <span class="section-tag">Qui suis-je ?</span>
+                <h2 class="section-title">À PROPOS DE MOI</h2>
+                <div class="section-divider"></div>
+            </div>
+
+            <div class="row g-4">
                 <div class="col-lg-6">
-                    <div class="content_skills">
-                        <h3 class="heading_content_skill">Informatique</h3>
-                        <h5 class="heading_content_title">Plus de 3 ans</h5>
-                        <!-- Progress Bars -->
-                        <div class="progress_bars_container pt-3">
-                            <label for="" class="skill_label">Python</label>
-                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 45%"></div>
-                            </div>
-                            <label for="" class="skill_label">Virtualisation</label>
-                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 75%"></div>
-                            </div>
-                            <label for="" class="skill_label">Gestion du Réseaux</label>
-                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 60%"></div>
-                            </div>
-                            <label for="" class="skill_label">Gestion des serveurs</label>
-                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 70%"></div>
-                            </div>
-                            <label for="" class="skill_label">Sauvegrde et Récuperation</label>
-                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 70%"></div>
-                            </div>
-                            <label for="" class="skill_label">Sécurité Informatique</label>
-                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 50%"></div>
-                            </div>
+                    <div class="about-card">
+                        <div class="info-row">
+                            <span class="info-label">Nom :</span>
+                            <span class="info-value">Issa NZAMBA</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Résidence :</span>
+                            <span class="info-value">Sénégal</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Email :</span>
+                            <span class="info-value">nzambaissa68@protonmail.com</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Expérience :</span>
+                            <span class="info-value">3+ ans</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Nationalité :</span>
+                            <span class="info-value">Gabonaise</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Profession :</span>
+                            <span class="info-value">Ingénieur DevOps</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="content_skills right_side_content">
-                        <h3 class="heading_content_skill text-start">Personnel</h3>
-                        <h5 class="heading_content_title text-start">Expérience en cours</h5>
-                        <!-- Progress Bars -->
-                        <div class="progress_bars_container pt-3">
-                            <label for="" class="skill_label">Créativité</label>
-                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 90%"></div>
-                            </div>
-                            <label for="" class="skill_label">Gestion du temps</label>
-                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 70%"></div>
-                            </div>
-                            <label for="" class="skill_label">Gestion du stress</label>
-                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="50"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 80%"></div>
-                            </div>
-                            <label for="" class="skill_label">Communictaion</label>
-                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 75%"></div>
-                            </div>
-                            <label for="" class="skill_label">Résolution des promblèmes</label>
-                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 80%"></div>
-                            </div>
-                            <label for="" class="skill_label">curiosité</label>
-                            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 75%"></div>
-                            </div>
-                        </div>
+                    <div class="about-image">
+                        <i class="fas fa-code" style="font-size: 60px;"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5 g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-box">
+                        <div class="stat-number">45%</div>
+                        <div class="stat-label">Programmation</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-box">
+                        <div class="stat-number">75%</div>
+                        <div class="stat-label">SysAdmin</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-box">
+                        <div class="stat-number">60%</div>
+                        <div class="stat-label">Administration Réseaux</div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="stat-box">
+                        <div class="stat-number">80%</div>
+                        <div class="stat-label">Bureautique</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills_Section -->
-
-    <!-- Services_section -->
-
-    <section class="services">
-        <div class="heading_service_container">
-            <h4 class="heading_service_title" id="Services">Services</h4>
-            <h2 class="heading_services">Mes Services</h2>
-            <p class="para_services">Services essentiels, incluant la
-                configuration et la gestion des serveurs, la supervision des équipements réseaux. J'assure aussi un
-                support
-                technique aux utilisateurs et met en place des stratégies de sauvegarde et de
-                récupération des données.</p>
-        </div>
-
+    <!-- SKILLS SECTION -->
+    <section id="competences" style="background: #0c0c1a;">
         <div class="container">
-            <div class="row mt-5 p-5 pb-4">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="content_services">
-                        <span><img src="/images/Server.png" class="icon_service" alt="icon"></span>
-                        <h3 class="heading_content_service">Configuration et gestion de serveurs</h3>
-                        <p class="para_content_service">Mise en place, configuration et maintenance de serveurs (web,
-                            mail, base de données).
-
-                        </p>
-
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="content_services">
-                        <span><img src="/images/technicien.png" class="icon_service" alt="icon"></span>
-                        <h3 class="heading_content_service">Support technique et maintenance</h3>
-                        <p class="para_content_service">Assistance et support technique pour les utilisateurs finaux,
-                            résolution des
-                            problèmes réseau et système.
-                        </p>
-
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="content_services">
-                        <span><img src="/images/Sauvegarde.png" class="icon_service" alt="icon"></span>
-                        <h3 class="heading_content_service">Sauvegarde et reprise après sinistre</h3>
-                        <p class="para_content_service"> Mise en place de solutions de sauvegarde et de stratégies de
-                            reprise après sinistre
-                            pour garantir la continuité des activités.
-                        </p>
-
-                    </div>
-                </div>
-
+            <div class="section-header">
+                <span class="section-tag">Mes compétences</span>
+                <h2 class="section-title">EXPERTISE TECHNIQUE</h2>
+                <div class="section-divider"></div>
             </div>
-            <div class="row px-5">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="content_services">
-                        <span><img src="/images/cloud.png" class="icon_service" alt="icon"></span>
-                        <h3 class="heading_content_service">Services de cloud</h3>
-                        <p class="para_content_service">Migration vers le cloud, gestion et optimisation des services
-                            cloud (AWS, Azure,
-                            Google Cloud).
-                        </p>
 
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="skills-card">
+                        <h3 class="skill-category">Compétences Techniques</h3>
+                        <p class="skill-subtitle">+3 ans d'expérience</p>
+
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Python / Programmation</span><span>45%</span></div>
+                            <div class="progress"><div class="progress-bar" style="width: 45%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Virtualisation (VMware, Docker)</span><span>75%</span></div>
+                            <div class="progress"><div class="progress-bar" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Gestion des Réseaux</span><span>60%</span></div>
+                            <div class="progress"><div class="progress-bar" style="width: 60%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Gestion des Serveurs</span><span>70%</span></div>
+                            <div class="progress"><div class="progress-bar" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Sauvegarde & Récupération</span><span>70%</span></div>
+                            <div class="progress"><div class="progress-bar" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Sécurité Informatique</span><span>50%</span></div>
+                            <div class="progress"><div class="progress-bar" style="width: 50%"></div></div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="content_services">
-                        <span><img src="/images/Ansible.jpeg" class="icon_service" alt="icon"></span>
-                        <h3 class="heading_content_service">Gestion des configurations</h3>
-                        <p class="para_content_service">Écriture de playbooks Ansible en Python pour automatiser la
-                            configuration et la
-                            gestion des serveurs.</p>
 
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="content_services">
-                        <span><img src="/images/creativity.png" class="icon_service" alt="icon"></span>
-                        <h3 class="heading_content_service">Automatisation des tâches</h3>
-                        <p class="para_content_service">Écriture de scripts python pour automatiser les tâches
-                            répétitives,
-                            comme
-                            les sauvegardes, la gestion des utilisateurs, la configuration des systèmes</p>
+                <div class="col-lg-6">
+                    <div class="skills-card">
+                        <h3 class="skill-category">Compétences Personnelles</h3>
+                        <p class="skill-subtitle">En développement continu</p>
 
-                    </div>
-                </div>
-
-
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="content_services">
-                        <span><img src="/images/chatbot.png" class="icon_service" alt="icon"></span>
-                        <h3 class="heading_content_service">Chatbots et assistants virtuels</h3>
-                        <p class="para_content_service">Développement de chatbots pour l'assistance technique ou
-                            l'automatisation des
-                            réponses aux requêtes courantes.
-
-                        </p>
-
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="content_services">
-                        <span><img src="/images/Donnees.png" class="icon_service" alt="icon"></span>
-                        <h3 class="heading_content_service">Scraping et collecte de données</h3>
-                        <p class="para_content_service">Utilisation de bibliothèques comme BeautifulSoup et Scrapy pour
-                            extraire
-                            des données
-                            utiles à partir de sites web pour des analyses ou des rapports.
-
-                        </p>
-
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="content_services">
-                        <span><img src="/images/virtualisation.png" class="icon_service" alt="icon"></span>
-                        <h3 class="heading_content_service">Virtualisation et conteneurisation</h3>
-                        <p class="para_content_service">Mise en place de solutions de virtualisation (VMware, Hyper-V)
-                            et de conteneurisation
-                            (Docker, Kubernetes).
-
-                        </p>
-
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Créativité</span><span>90%</span></div>
+                            <div class="progress"><div class="progress-bar" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Gestion du temps</span><span>70%</span></div>
+                            <div class="progress"><div class="progress-bar" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Gestion du stress</span><span>80%</span></div>
+                            <div class="progress"><div class="progress-bar" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Communication</span><span>75%</span></div>
+                            <div class="progress"><div class="progress-bar" style="width: 75%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Résolution de problèmes</span><span>80%</span></div>
+                            <div class="progress"><div class="progress-bar" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Curiosité / Apprentissage</span><span>85%</span></div>
+                            <div class="progress"><div class="progress-bar" style="width: 85%"></div></div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="row mt-5 p-5 pb-4">
-
-
-
-
-
-
-            </div>
-            <div class="row mt-5 p-5 pb-4">
-
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="content_services">
-                        <span><img src="/images/code.png" class="icon_service" alt="icon"></span>
-                        <h3 class="heading_content_service">React</h3>
-                        <p class="para_content_service">Dashboards & interfaces admin
-
-                        </p>
-
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <div class="content_services">
-                        <span><img src="/images/database-management.png" class="icon_service" alt="icon"></span>
-                        <h3 class="heading_content_service">Audit & optimisation de BDD</h3>
-                        <p class="para_content_service">Optimisation SQL, Conception de schéma, Migration de données
-
-                        </p>
-
-                    </div>
-                </div>
-
-            </div>
-
         </div>
-
     </section>
 
-    <!-- Services_section -->
-
-    <!-- Testimonial_section -->
-
-    <section class="testimonials">
-        <h2 class="heading_testimonial">Témoignages</h2>
-        <h4 class="heading_testimonial_2">Mes clients disent</h4>
-
+    <!-- SERVICES SECTION -->
+    <section id="services">
         <div class="container">
-            <div class="row mt-5">
-                <div class="col-lg-6">
-                    <div class="content_testimonials">
-                        <div class="top_part_testimonial">
-                            <div class="img_container_testimonial"></div>
-                            <div class="name_rating">
-                                <span><i class="fa stars fa-star"></i></span>
-                                <span><i class="fa stars fa-star"></i></span>
-                                <span><i class="fa stars fa-star"></i></span>
-                                <span><i class="fa stars fa-star"></i></span>
-                                <h3 class="name_client">Omog Consulting</h3>
-                            </div>
-                        </div>
+            <div class="section-header">
+                <span class="section-tag">Ce que je fais</span>
+                <h2 class="section-title">MES SERVICES</h2>
+                <div class="section-divider"></div>
+                <p style="max-width: 700px; margin: 20px auto 0; color: rgba(255,255,255,0.7);">Services essentiels incluant la configuration et la gestion des serveurs, la supervision des équipements réseaux, le support technique, et des stratégies de sauvegarde et récupération des données.</p>
+            </div>
 
-                        <p class="para_content_testimonial">Service excellent, Il a optimisé et automatisé
-                            nos tâches cruciales comme la sauvegarde et la restauration des données. </p>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-server"></i></div>
+                        <h3>Configuration & Gestion de serveurs</h3>
+                        <p>Mise en place, configuration et maintenance de serveurs (web, mail, base de données).</p>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="content_testimonials content_testimonials_2">
-                        <div class="top_part_testimonial">
-                            <div class="img_container_testimonial_2"></div>
-                            <div class="name_rating">
-                                <span><i class="fa stars fa-star"></i></span>
-                                <span><i class="fa stars fa-star"></i></span>
-                                <span><i class="fa stars fa-star"></i></span>
-                                <span><i class="fa stars fa-star"></i></span>
-                                <h3 class="name_client">Monica</h3>
-                            </div>
-                        </div>
-
-                        <p class="para_content_testimonial">Je suis ravie du site web qu'il a créé. Design magnifique,
-                            navigation fluide et
-                            fonctionnalités sur mesure. Hautement recommandé ! </p>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-headset"></i></div>
+                        <h3>Support technique & Maintenance</h3>
+                        <p>Assistance et support technique pour les utilisateurs finaux, résolution des problèmes réseau et système.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-database"></i></div>
+                        <h3>Sauvegarde & Reprise après sinistre</h3>
+                        <p>Solutions de sauvegarde et stratégies de reprise après sinistre pour garantir la continuité des activités.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <h3>Services Cloud</h3>
+                        <p>Migration vers le cloud, gestion et optimisation des services cloud (AWS, Azure, Google Cloud).</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-code-branch"></i></div>
+                        <h3>Gestion des configurations</h3>
+                        <p>Écriture de playbooks Ansible en Python pour automatiser la configuration des serveurs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-robot"></i></div>
+                        <h3>Automatisation des tâches</h3>
+                        <p>Scripts Python pour automatiser les tâches répétitives (sauvegardes, gestion utilisateurs).</p>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
 
-    <!-- Testimonial_section-->
+    <!-- TESTIMONIALS SECTION -->
+    <section style="background: #0c0c1a;">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Témoignages</span>
+                <h2 class="section-title">CE QUE MES CLIENTS DISENT</h2>
+                <div class="section-divider"></div>
+            </div>
 
-    <!-- Footer -->
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar"><i class="fas fa-user"></i></div>
+                            <div>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <h4 style="margin: 0;">Omog Consulting</h4>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Service excellent. Il a optimisé et automatisé nos tâches cruciales comme la sauvegarde et la restauration des données."</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar"><i class="fas fa-user-circle"></i></div>
+                            <div>
+                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                                <h4 style="margin: 0;">Monica</h4>
+                            </div>
+                        </div>
+                        <p class="testimonial-text">"Je suis ravie du site web qu'il a créé. Design magnifique, navigation fluide et fonctionnalités sur mesure. Hautement recommandé !"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- CTA SECTION -->
+    <section id="contact" class="cta-section">
+        <div class="container">
+            <h2>Prêt à collaborer ?</h2>
+            <p>Discutons de votre projet et voyons comment je peux vous aider à atteindre vos objectifs.</p>
+            <a href="mailto:nzambaissa68@protonmail.com" class="btn btn-primary-custom btn-custom">
+                <i class="fas fa-envelope me-2"></i>Contactez-moi
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
         <div class="container">
-            <div class="row h-100 d-flex align-items-center">
-                <div class="col-lg-4 col-md-4 d-flex justify-content-center">
-                    <div class="footer_1">
-                        <h3 class="heading_footer">Issa NZAMBA</h3>
-                        <h5 class="heading_footer_title">Ingénieur de Conception & Developpement</h5>
-                    </div>
+            <div class="row">
+                <div class="col-lg-4 text-center text-lg-start">
+                    <div class="footer-logo">Issa NZAMBA</div>
+                    <p style="color: rgba(255,255,255,0.6);">Ingénieur de Conception & Développement</p>
                 </div>
-                <div class="col-lg-4 col-md-4 d-flex justify-content-center">
-                    <ul class="navbar_footer">
-                        <li class="nav-item">
-                            <a href="#" id="Acceuil" class="nav-link-footer">Acceuil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#Services" class="nav-link-footer">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#Competences" class="nav-link-footer">Competences</a>
-                        </li>
+                <div class="col-lg-4">
+                    <ul class="footer-links">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#competences">Compétences</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-md-4 d-flex justify-content-center">
-                    <div class="social_media_footer">
-                        <a href="https://github.com/issaNzamba"><span><i class="fab icon_footer fa-github"></i>
-                            </span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/issa-nzamba-399a47291"><span><i
-                                    class="fab icon_footer fa-linkedin"></i></span>
-
-                        </a>
-                        <a href="https://youtube.com/@issanzamba?si=fh-MXCthEN4of3Y9"><span><i
-                                    class="fab fa-youtube icon_footer"></i></span></a>
+                <div class="col-lg-4">
+                    <div class="footer-social">
+                        <a href="https://github.com/issaNzamba" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/issa-nzamba-399a47291" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://youtube.com/@issanzamba" target="_blank"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 afridevops.online – Actualité technologique africaine. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <div class="footer_copyrights">
-        <h4 class="heading_copyright">© 2026 afridevops.online – Actualité technologique africaine, toute actualité du
-            jour. Tous droits réservés.</h4>
-    </div>
+        <!-- Custom Script -->
+    <script src="/js/script.js"></script>
 
-    <!-- Footer -->
 </body>
 
 </html>
