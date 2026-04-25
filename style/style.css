@@ -40,20 +40,20 @@
 
 .nav-btn {
     padding: 11px 25px !important;
-    border: 2px solid rgb(208, 86, 0);
+    border: 4px solid rgb(41, 171, 226);
     text-decoration: none;
     font-size: 14px;
     font-weight: 500;
-    color: rgb(255, 160, 92);
-    border-radius: 2px;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
     margin-left: 16px;
     transition: 0.2s ease-in;
 }
 
 .nav-btn:hover {
-    background-color: yellowgreen;
+    background-color: rgb(41, 171, 226);
     color: white;
-    border: 2px solid yellowgreen;
+    border: 4px solid rgb(255, 255, 255);
 }
 
 .home_section {
@@ -62,27 +62,29 @@
 }
 
 .container_content_home {
-    width: 100%;
-    height: 70vh;
+    width: 60%;
+    margin-left: auto;
+    height:100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
 }
 
 
 .heading_home {
-    font-size: 52px;
+    font-size: 70px;
     font-weight: 700;
-    color: rgb(196, 95, 95);
-    padding: 15px 0px;
+    color: rgb(244, 0, 0);
+    padding: 20px 0px;
 }
 
 .heading_title {
     font-size: 16px;
     color: rgba(255, 255, 255, 0.851);
     font-weight: 600;
-    margin: 10px 0px;
+    margin: 20px 0px;
+    text-align: left;
 }
 
 .social_media_container {
@@ -492,5 +494,5 @@ footer {
 .heading_copyright {
     color: rgba(255, 255, 255, 0.85);
     font-size: 14px;
-    margin: 0px;
+    margin: -10px;    
 }
