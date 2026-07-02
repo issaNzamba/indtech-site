@@ -3,56 +3,43 @@ name: 🚀 CI/CD - Gitflow
 on:
   push:
     branches:
-      - develop      # ← Anciennement dev
+      - develop
       - main
-      - 'feature/**'
-      - 'release/**'
-      - 'hotfix/**'
 
 jobs:
-  test:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: ✅ Tests
-        run: echo "✅ Tests passés"
-
-  deploy-dev:
-    runs-on: ubuntu-latest
-    needs: test
-    if: github.ref_name == 'develop'  # ← Anciennement dev
-    steps:
-      - uses: actions/checkout@v3
-      - name: 🔗 Déploiement DEV
+      
+      - name: Déploiement SSH
         uses: appleboy/ssh-action@v0.1.5
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
+            echo "📅 Déploiement du $(date)"
+            echo "🌿 Branche : ${{ github.ref_name }}"
+            
             cd /var/www/html/portfolio
+            
+            # ✅ Vérifier que le dépôt existe
+            if [ ! -d ".git" ]; then
+              echo "📦 Clonage du dépôt..."
+              git clone https://github.com/${{ github.repository }} .
+            fi
+            
+            # ✅ Récupérer les dernières modifications
             git fetch origin
-            git checkout develop
-            git pull origin develop
+            git checkout ${{ github.ref_name }}
+            git pull origin ${{ github.ref_name }}
+            
+            # Afficher le dernier commit
+            echo "📝 Dernier commit : $(git log -1 --oneline)"
+            
+            # Redémarrer Nginx
             sudo systemctl reload nginx
-            echo "✅ DEV déployé"
-
-  deploy-prod:
-    runs-on: ubuntu-latest
-    needs: test
-    if: github.ref_name == 'main'
-    steps:
-      - uses: actions/checkout@v3
-      - name: 🔗 Déploiement PROD
-        uses: appleboy/ssh-action@v0.1.5
-        with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ${{ secrets.EC2_USER }}
-          key: ${{ secrets.EC2_SSH_KEY }}
-          script: |
-            cd /var/www/html/portfolio
-            git fetch origin
-            git checkout main
-            git pull origin main
-            sudo systemctl reload nginx
-            echo "✅ PROD déployé"
+            
+            echo "✅ Déploiement terminé avec succès !"
+            echo "🌐 Site accessible sur http://${{ secrets.EC2_HOST }}"
