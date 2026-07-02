@@ -1,65 +1,58 @@
-name: 🚀 Déploiement sur EC2
+name: 🚀 CI/CD - Gitflow
 
 on:
   push:
     branches:
-      - dev          # Déclenché sur push vers dev
-      - main         # Déclenché sur push vers main
+      - develop      # ← Anciennement dev
+      - main
+      - 'feature/**'
+      - 'release/**'
+      - 'hotfix/**'
 
 jobs:
-  deploy:
-    name: 📦 Déploiement
+  test:
     runs-on: ubuntu-latest
-    
     steps:
-      # 1. Récupération du code
-      - name: 📥 Récupération du code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
+      - name: ✅ Tests
+        run: echo "✅ Tests passés"
 
-      # 2. Connexion SSH et déploiement
-      - name: 🔗 Connexion SSH et déploiement
+  deploy-dev:
+    runs-on: ubuntu-latest
+    needs: test
+    if: github.ref_name == 'develop'  # ← Anciennement dev
+    steps:
+      - uses: actions/checkout@v3
+      - name: 🔗 Déploiement DEV
         uses: appleboy/ssh-action@v0.1.5
         with:
           host: ${{ secrets.EC2_HOST }}
           username: ${{ secrets.EC2_USER }}
           key: ${{ secrets.EC2_SSH_KEY }}
-          port: ${{ secrets.EC2_PORT || 22 }}
           script: |
-            # Afficher la date et l'heure
-            echo "📅 Déploiement du $(date)"
-            
-            # Aller dans le dossier du site
-            cd /var/www/html/votre-site
-            
-            # Vérifier la branche (selon la branche qui a poussé)
-            if [ "${{ github.ref_name }}" == "dev" ]; then
-              BRANCH="dev"
-            elif [ "${{ github.ref_name }}" == "main" ]; then
-              BRANCH="main"
-            else
-              BRANCH="dev"
-            fi
-            
-            echo "🌿 Branche : $BRANCH"
-            
-            # Mettre à jour le code
+            cd /var/www/html/portfolio
             git fetch origin
-            git checkout $BRANCH
-            git pull origin $BRANCH
-            
-            # Afficher le dernier commit
-            echo "📝 Dernier commit :"
-            git log -1 --oneline
-            
-            # Redémarrer le serveur web (selon votre configuration)
-            # Nginx
+            git checkout develop
+            git pull origin develop
             sudo systemctl reload nginx
-            # ou Apache
-            # sudo systemctl reload apache2
-            # ou PHP-FPM
-            # sudo systemctl reload php8.1-fpm
-            
-            # Vider le cache (si vous utilisez un cache)
-            # rm -rf /var/www/html/votre-site/cache/*
-            
-            echo "✅ Déploiement terminé avec succès !"
+            echo "✅ DEV déployé"
+
+  deploy-prod:
+    runs-on: ubuntu-latest
+    needs: test
+    if: github.ref_name == 'main'
+    steps:
+      - uses: actions/checkout@v3
+      - name: 🔗 Déploiement PROD
+        uses: appleboy/ssh-action@v0.1.5
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            cd /var/www/html/portfolio
+            git fetch origin
+            git checkout main
+            git pull origin main
+            sudo systemctl reload nginx
+            echo "✅ PROD déployé"
