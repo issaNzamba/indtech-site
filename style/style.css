@@ -342,17 +342,130 @@ section {
 }
 
 .about-avatar {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    /* Bordure avec effet de lumière */
+    border: 3px solid var(--accent);
+    box-shadow: 
+        0 0 20px rgba(0, 180, 216, 0.3),
+        inset 0 0 20px rgba(0, 180, 216, 0.1);
+    transition: all 0.4s ease;
+    /* Fond de secours si l'image ne charge pas */
     background: linear-gradient(135deg, var(--accent), var(--accent-dark));
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Conteneur de l'image */
+.about-avatar .profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+/* Effet au survol - zoom léger + effet de lueur */
+.about-avatar:hover {
+    transform: scale(1.05);
+    box-shadow: 
+        0 0 30px rgba(0, 180, 216, 0.5),
+        0 0 60px rgba(0, 180, 216, 0.2),
+        inset 0 0 30px rgba(0, 180, 216, 0.2);
+    border-color: var(--accent-light);
+}
+
+.about-avatar:hover .profile-photo {
+    transform: scale(1.1);
+}
+
+/* Anneau lumineux autour de l'avatar (effet de glow) */
+.about-avatar::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 50%;
+    background: conic-gradient(
+        from 0deg,
+        var(--accent),
+        var(--accent-light),
+        var(--accent),
+        var(--accent-dark),
+        var(--accent)
+    );
+    opacity: 0;
+    z-index: -1;
+    animation: rotateGlow 4s linear infinite;
+    transition: opacity 0.4s ease;
+}
+
+.about-avatar:hover::before {
+    opacity: 1;
+}
+
+/* Animation de rotation du glow */
+@keyframes rotateGlow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* Position relative pour le pseudo-élément */
+.about-avatar {
+    position: relative;
+}
+
+/* Fallback si l'image ne charge pas - afficher les initiales */
+.about-avatar .fallback-text {
+    font-size: 24px;
     font-weight: 700;
-    font-size: 18px;
     color: white;
-    flex-shrink: 0;
+    display: none;
+}
+
+.about-avatar img:not([src]) + .fallback-text,
+.about-avatar img[src=""] + .fallback-text {
+    display: block;
+}
+
+/* Version simplifiée et élégante (alternative) */
+.about-avatar.elegant {
+    border: 3px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.about-avatar.elegant:hover {
+    border-color: var(--accent);
+    box-shadow: 0 8px 40px rgba(0, 180, 216, 0.3);
+}
+
+/* ==================== RESPONSIVE ==================== */
+@media (max-width: 768px) {
+    .about-avatar {
+        width: 60px;
+        height: 60px;
+        border-width: 2px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-avatar {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .about-status {
