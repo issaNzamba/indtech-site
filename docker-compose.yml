@@ -1,0 +1,13 @@
+services:
+  portfolio:
+    build: .
+    container_name: portfolio-site
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    volumes:
+      # Pour le développement en local (optionnel)
+      - ./index.html:/usr/share/nginx/html/index.html
+      - ./style:/usr/share/nginx/html/style
+      - ./js:/usr/share/nginx/html/js
+      - ./images:/usr/share/nginx/html/images
