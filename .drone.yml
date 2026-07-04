@@ -18,8 +18,11 @@ steps:
         from_secret: EC2_SSH_KEY
       port: 22
       script:
+        - mkdir -p /home/ubuntu/projects/indtech-site
+        - if [ ! -d /home/ubuntu/projects/indtech-site/.git ]; then git clone https://github.com/issaNzamba/indtech-site.git /home/ubuntu/projects/indtech-site; fi
         - cd /home/ubuntu/projects/indtech-site
+        - git checkout main
         - git pull origin main
-        - docker-compose down
-        - docker-compose up -d --build
+        - docker compose down
+        - docker compose up -d --build
         - docker image prune -f
