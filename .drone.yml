@@ -1,0 +1,25 @@
+kind: pipeline
+type: docker
+name: deploy-portfolio
+
+trigger:
+  branch:
+    - main
+
+steps:
+  - name: deploy
+    image: appleboy/drone-ssh
+    settings:
+      host:
+        from_secret: EC2_HOST
+      username:
+        from_secret: EC2_USER
+      key:
+        from_secret: EC2_SSH_KEY
+      port: 22
+      script:
+        - cd /home/ubuntu/projects/indtech-site
+        - git pull origin main
+        - docker-compose down
+        - docker-compose up -d --build
+        - docker image prune -f
