@@ -1,0 +1,13 @@
+services:
+  traefik:
+    ports:
+      - "80:80"
+    command:
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+
+  portfolio:
+    labels:
+      - "traefik.http.routers.portfolio.rule=Host(`afridevops.local`) || Host(`www.afridevops.local`)"
+      - "traefik.http.routers.portfolio.entrypoints=web"
