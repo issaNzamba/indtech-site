@@ -10,22 +10,38 @@ services:
       - traefik-certificates:/certificates
     command:
       - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
       - "--entrypoints.web.address=:80"
       - "--entrypoints.websecure.address=:443"
       - "--certificatesresolvers.letsencrypt.acme.email=issa.nzamba.pro@gmail.com"
       - "--certificatesresolvers.letsencrypt.acme.storage=/certificates/acme.json"
       - "--certificatesresolvers.letsencrypt.acme.httpchallenge.entrypoint=web"
+      - "--api.dashboard=true"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.dashboard.rule=Host(`traefik.afridevops.online`)"
+      - "traefik.http.routers.dashboard.service=api@internal"
+      - "traefik.http.routers.dashboard.entrypoints=websecure"
+      - "traefik.http.routers.dashboard.tls.certresolver=letsencrypt"
     restart: unless-stopped
+    networks:
+      - web
 
   portfolio:
     build: .
     container_name: portfolio-site
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.portfolio.rule=Host(`afridevops.online`)"
+      - "traefik.http.routers.portfolio.rule=Host(`afridevops.online`) || Host(`www.afridevops.online`)"
       - "traefik.http.routers.portfolio.entrypoints=websecure"
       - "traefik.http.routers.portfolio.tls.certresolver=letsencrypt"
     restart: unless-stopped
+    networks:
+      - web
+
+networks:
+  web:
+    driver: bridge
 
 volumes:
   traefik-certificates:
