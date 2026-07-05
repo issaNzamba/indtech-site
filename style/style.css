@@ -13,7 +13,7 @@
     --border-radius: 20px;
     /* Couleurs navbar - vos choix */
     --navbar-default: rgba(15, 15, 216, 0.95);
-    --navbar-scrolled: rgba(214, 11, 11, 0.98);
+    --navbar-scrolled: rgba(8, 8, 90, 0.98);
 }
 
 * {

@@ -16,13 +16,6 @@ services:
       - "--certificatesresolvers.letsencrypt.acme.email=issa.nzamba.pro@gmail.com"
       - "--certificatesresolvers.letsencrypt.acme.storage=/certificates/acme.json"
       - "--certificatesresolvers.letsencrypt.acme.httpchallenge.entrypoint=web"
-      - "--api.dashboard=true"
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.dashboard.rule=Host(`traefik.afridevops.online`)"
-      - "traefik.http.routers.dashboard.service=api@internal"
-      - "traefik.http.routers.dashboard.entrypoints=websecure"
-      - "traefik.http.routers.dashboard.tls.certresolver=letsencrypt"
     restart: unless-stopped
     networks:
       - web
@@ -32,9 +25,8 @@ services:
     container_name: portfolio-site
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.portfolio.rule=Host(`afridevops.online`) || Host(`www.afridevops.online`)"
-      - "traefik.http.routers.portfolio.entrypoints=websecure"
-      - "traefik.http.routers.portfolio.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.portfolio.rule=Host(`afridevops.local`) || Host(`www.afridevops.local`)"
+      - "traefik.http.routers.portfolio.entrypoints=web"
     restart: unless-stopped
     networks:
       - web
