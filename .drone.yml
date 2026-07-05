@@ -1,6 +1,33 @@
+---
+# Pipeline pour la branche develop (tests uniquement, pas de déploiement)
 kind: pipeline
 type: docker
-name: deploy-portfolio
+name: test-develop
+
+trigger:
+  branch:
+    - develop
+
+steps:
+  - name: build-test
+    image: docker:latest
+    commands:
+      - docker build -t portfolio-test .
+      - echo "✅ Build réussi sur develop"
+    volumes:
+      - name: docker-sock
+        path: /var/run/docker.sock
+
+volumes:
+  - name: docker-sock
+    host:
+      path: /var/run/docker.sock
+
+---
+# Pipeline pour la branche main (déploiement en production)
+kind: pipeline
+type: docker
+name: deploy-production
 
 trigger:
   branch:
