@@ -12,14 +12,6 @@ steps:
     image: docker:latest
     commands:
       - echo "✅ Build test sur develop - OK"
-    volumes:
-      - name: docker-sock
-        path: /var/run/docker.sock
-
-volumes:
-  - name: docker-sock
-    host:
-      path: /var/run/docker.sock
 
 ---
 kind: pipeline
