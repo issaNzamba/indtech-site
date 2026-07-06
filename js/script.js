@@ -31,12 +31,8 @@ window.addEventListener('scroll', function() {
     if (navbar) {
         if (window.scrollY > 50) {
             navbar.classList.add('scrolled');
-            navbar.style.background = 'rgba(214, 11, 11, 0.98)';
-            navbar.style.padding = '10px 0';
         } else {
             navbar.classList.remove('scrolled');
-            navbar.style.background = 'rgba(15, 15, 216, 0.95)';
-            navbar.style.padding = '15px 0';
         }
     }
 });
@@ -230,4 +226,4 @@ if (hero) {
 console.log('%c🚀 Portfolio - Issa NZAMBA - Version 2.0.0-dev', 'color: #00b4d8; font-size: 16px; font-weight: bold;');
 console.log('%c📅 ' + new Date().getFullYear() + ' - afridevops.online', 'color: #666; font-size: 12px;');
 console.log('%c💡 Nouvelles fonctionnalités: Preloader, Typewriter, AOS animations', 'color: #888; font-size: 12px;');
-console.log('%c🎨 Navbar: Rouge (#d60b0b) en scroll, Bleu (#0f0fd8) par défaut', 'color: #ff6b6b; font-size: 12px;');
+console.log('%c🎨 Navbar: bleu marine (#08085a) en scroll, bleu (#0f0fd8) par défaut', 'color: #48cae4; font-size: 12px;');
