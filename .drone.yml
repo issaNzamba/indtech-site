@@ -9,9 +9,18 @@ trigger:
 
 steps:
   - name: build-test
-    image: alpine:latest
+    image: docker:latest
     commands:
-      - echo "✅ Build test sur develop - OK"
+      - docker build -t portfolio-test .
+      - echo "✅ Build réussi sur develop"
+    volumes:
+      - name: docker-sock
+        path: /var/run/docker.sock
+
+volumes:
+  - name: docker-sock
+    host:
+      path: /var/run/docker.sock
 
 ---
 kind: pipeline
@@ -37,7 +46,5 @@ steps:
         - cd /home/ubuntu/projects/indtech-site
         - git checkout main
         - git pull origin main
-        - docker compose down
-        - docker rm -f portfolio-site 2>/dev/null || true
-        - docker compose up -d --build
+        - docker compose up -d --build portfolio
         - docker image prune -f
