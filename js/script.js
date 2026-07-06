@@ -139,7 +139,7 @@ if (typewriterElement) {
     const texts = [
         'Issa NZAMBA, Développeur Web',
         'Spécialiste Full-Stack',
-        'Expert en Gestion de Projets',
+        'Débutant en Gestion de Projets',
     ];
     let textIndex = 0;
     let charIndex = 0;
