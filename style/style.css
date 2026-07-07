@@ -756,6 +756,20 @@ section {
     overflow: hidden;
 }
 
+/* Nouvelle classe pour les images de vos projets */
+.project-img-custom {
+  width: 100%;
+  height: 200px; /* Ajustez cette hauteur selon la taille désirée pour vos cartes */
+  object-fit: cover; /* Remplit l'espace sans écraser l'image */
+  display: block;
+  transition: transform 0.3s ease; /* Optionnel : pour un petit effet de zoom au survol */
+}
+
+/* Optionnel : un petit effet de zoom quand on passe la souris sur la carte */
+.project-card:hover .project-img-custom {
+  transform: scale(1.05);
+}
+
 .project-placeholder {
     width: 100%;
     height: 100%;
