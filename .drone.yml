@@ -2,11 +2,9 @@
 kind: pipeline
 type: docker
 name: test-develop
-
 trigger:
   branch:
     - develop
-
 steps:
   - name: build-test
     image: docker:latest
@@ -16,21 +14,17 @@ steps:
     volumes:
       - name: docker-sock
         path: /var/run/docker.sock
-
 volumes:
   - name: docker-sock
     host:
       path: /var/run/docker.sock
-
 ---
 kind: pipeline
 type: docker
 name: deploy-production
-
 trigger:
   branch:
     - main
-
 steps:
   - name: deploy
     image: appleboy/drone-ssh
@@ -42,9 +36,13 @@ steps:
       key:
         from_secret: EC2_SSH_KEY
       port: 22
+      command_timeout: 5m
       script:
+        - set -e
         - cd /home/ubuntu/projects/indtech-site
         - git checkout main
         - git pull origin main
-        - docker compose up -d --build portfolio
+        - docker compose build portfolio
+        - docker rm -f portfolio-site || true
+        - docker compose up -d --no-build portfolio
         - docker image prune -f
