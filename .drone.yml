@@ -13,9 +13,10 @@ steps:
     commands:
       - docker build -t portfolio-test .
       - echo "✅ Build réussi sur develop"
-    volumes:
-      - name: docker-sock
-        path: /var/run/docker.sock
+
+volumes:
+  - name: docker-sock
+    path: /var/run/docker.sock
 
 volumes:
   - name: docker-sock
