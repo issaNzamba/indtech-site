@@ -1,730 +1,630 @@
 <!doctype html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Développeur Web - Services IT pour PME et startups"
-    />
-    <meta name="author" content="Issa NZAMBA" />
-    <title>Issa NZAMBA | Développeur Web</title>
 
-    <!-- Font Awesome Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Développeur Web - Services IT pour PME et startups" />
+  <meta name="author" content="Issa NZAMBA" />
+  <title>Issa NZAMBA | Développeur Web</title>
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-    <!-- AOS Animation (NOUVEAU) -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- CSS links -->
-    <link rel="stylesheet" href="/style/style.css" />
+  <!-- AOS Animation (NOUVEAU) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    <!-- Version tag (NOUVEAU) -->
-    <meta name="version" content="2.0.0-dev" />
-  </head>
+  <!-- CSS links -->
+  <link rel="stylesheet" href="/style/style.css" />
 
-  <body>
-    <!-- PRELOADER (NOUVEAU) -->
-    <div class="preloader" id="preloader">
-      <div class="loader"></div>
-      <p class="loader-text">Chargement...</p>
-    </div>
+  <!-- Version tag (NOUVEAU) -->
+  <meta name="version" content="2.0.0-dev" />
+</head>
 
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-custom" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="#"> issa NZAMBA </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#accueil">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#apropos">À propos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#competences">Compétences</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projets">Projets</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-          <div class="social-icons">
-            <a
-              href="https://github.com/issaNzamba"
-              target="_blank"
-              aria-label="GitHub"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a
-              href="https://www.linkedin.com/in/issa-nzamba-399a47291"
-              target="_blank"
-              aria-label="LinkedIn"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-            <a
-              href="https://youtube.com/@issanzamba"
-              target="_blank"
-              aria-label="YouTube"
-              ><i class="fab fa-youtube"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-    </nav>
+<body>
+  <!-- PRELOADER (NOUVEAU) -->
+  <div class="preloader" id="preloader">
+    <div class="loader"></div>
+    <p class="loader-text">Chargement...</p>
+  </div>
 
-    <!-- HERO SECTION -->
-    <section id="accueil" class="hero">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1000">
-            <span class="hero-badge">Bienvenue</span>
-            <h1>
-              Partenaire des PME <span class="highlight">&</span> startups
-            </h1>
-            <p class="hero-subtitle" id="typewriter"></p>
-            <div class="hero-buttons">
-              <a
-                href="mailto:issanzamba@afridevops.online"
-                class="btn btn-primary-custom btn-custom"
-              >
-                <i class="fas fa-envelope me-2"></i>Contactez-moi
-              </a>
-              <a href="#services" class="btn btn-outline-custom btn-custom">
-                <i class="fas fa-chevron-down me-2"></i>Découvrir
-              </a>
-            </div>
-            <!-- Stats rapides (NOUVEAU) -->
-            <div class="hero-stats mt-4">
-              <div class="stat-item">
-                <span class="stat-number-hero">3+</span>
-                <span class="stat-label-hero">Ans d'expérience</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number-hero">10+</span>
-                <span class="stat-label-hero">Projets</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-number-hero">05+</span>
-                <span class="stat-label-hero">Clients</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Indicateur de scroll (NOUVEAU) -->
-      <div class="scroll-indicator">
-        <a href="#apropos" aria-label="Scroller vers le bas">
-          <i class="fas fa-chevron-down"></i>
-        </a>
-      </div>
-    </section>
-
-<!-- ABOUT SECTION -->
-<section id="apropos">
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-custom" id="mainNav">
     <div class="container">
-        <div class="section-header" data-aos="fade-up">
-            <span class="section-tag">Qui suis-je ?</span>
-            <h2 class="section-title">À PROPOS DE MOI</h2>
-            <div class="section-divider"></div>
-            <p class="section-description">Passionné par les technologies et l'innovation, je mets mon expertise au service des entreprises.</p>
+      <a class="navbar-brand" href="#"> issa NZAMBA </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#accueil">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#apropos">À propos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#competences">Compétences</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projets">Projets</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <div class="social-icons">
+          <a href="https://github.com/issaNzamba" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/issa-nzamba-399a47291" target="_blank" aria-label="LinkedIn"><i
+              class="fab fa-linkedin"></i></a>
+          <a href="https://youtube.com/@issanzamba" target="_blank" aria-label="YouTube"><i
+              class="fab fa-youtube"></i></a>
         </div>
-
-        <div class="row g-4">
-            <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-                <div class="about-card">
-                    <!-- Header avec photo de profil -->
-                    <div class="about-header">
-                        <div class="about-avatar">
-                            <img src="/images/profile.jpg" alt="Issa NZAMBA - Photo de profil" class="profile-photo">
-                        </div>
-                        <div class="about-status">
-                            <span class="status-dot"></span>
-                            Disponible
-                        </div>
-                    </div>
-                    
-                    <div class="info-row">
-                        <span class="info-label"><i class="fas fa-user"></i> Nom :</span>
-                        <span class="info-value">Issa NZAMBA</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label"><i class="fas fa-map-marker-alt"></i> Résidence :</span>
-                        <span class="info-value">Sénégal</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label"><i class="fas fa-envelope"></i> Email :</span>
-                        <span class="info-value">issanzamba@afridevops.online</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label"><i class="fas fa-briefcase"></i> Expérience :</span>
-                        <span class="info-value">3+ ans</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label"><i class="fas fa-flag"></i> Nationalité :</span>
-                        <span class="info-value">Gabonais</span>
-                    </div>
-                    <div class="info-row">
-                        <span class="info-label"><i class="fas fa-graduation-cap"></i> Profession :</span>
-                        <span class="info-value">Développeur Web</span>
-                    </div>
-                    
-                    <div class="about-buttons mt-4">
-                        <a href="#" class="btn btn-primary-custom btn-sm">
-                            <i class="fas fa-download me-2"></i>CV
-                        </a>
-                        <a href="#contact" class="btn btn-outline-custom btn-sm">
-                            <i class="fas fa-comment me-2"></i>Discuter
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-                <div class="about-image">
-                    <div class="image-overlay">
-                        <div class="experience-badge">
-                            <span class="exp-number">3+</span>
-                            <span class="exp-label">Ans</span>
-                        </div>
-                    </div>
-                    <i class="fas fa-code" style="font-size: 60px;"></i>
-                </div>
-            </div>
-        </div>
-
-        <!-- Stats -->
-        <div class="row mt-5 g-4">
-            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="stat-box">
-                    <div class="stat-number">45%</div>
-                    <div class="stat-label">Programmation</div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="stat-box">
-                    <div class="stat-number">75%</div>
-                    <div class="stat-label">SysAdmin</div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="stat-box">
-                    <div class="stat-number">60%</div>
-                    <div class="stat-label">Administration Réseaux</div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="stat-box">
-                    <div class="stat-number">80%</div>
-                    <div class="stat-label">Bureautique</div>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
-</section>
+  </nav>
 
-    <!-- SKILLS SECTION -->
-    <section id="competences" style="background: #0c0c1a">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <span class="section-tag">Mes compétences</span>
-          <h2 class="section-title">EXPERTISE TECHNIQUE</h2>
-          <div class="section-divider"></div>
-        </div>
-
-        <div class="row g-4">
-          <!-- Colonne Gauche - Compétences Techniques -->
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="skills-card">
-              <h3 class="skill-category">
-                <i class="fas fa-laptop-code"></i> Compétences Techniques
-              </h3>
-              <p class="skill-subtitle">+3 ans d'expérience</p>
-
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span>Python / Programmation</span><span>45%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 45%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span>Virtualisation (VMware, Docker)</span><span>75%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 75%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span>Gestion des Réseaux</span><span>60%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 60%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span>Gestion des Serveurs</span><span>70%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 70%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span>Sauvegarde & Récupération</span><span>70%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 70%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span>Sécurité Informatique</span><span>50%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 50%"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Colonne Droite - Compétences Personnelles (CORRIGÉE) -->
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-            <div class="skills-card">
-              <h3 class="skill-category">
-                <i class="fas fa-brain"></i> Compétences Personnelles
-              </h3>
-              <p class="skill-subtitle">En développement continu</p>
-
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span>Créativité</span><span>90%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 90%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span>Gestion du temps</span><span>70%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 70%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span>Gestion du stress</span><span>80%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 80%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span>Communication</span><span>75%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 75%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span>Résolution de problèmes</span><span>80%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 80%"></div>
-                </div>
-              </div>
-              <div class="skill-item">
-                <div class="skill-info">
-                  <span>Curiosité / Apprentissage</span><span>85%</span>
-                </div>
-                <div class="progress">
-                  <div class="progress-bar" style="width: 85%"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- SERVICES SECTION -->
-    <section id="services">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <span class="section-tag">Ce que je fais</span>
-          <h2 class="section-title">MES SERVICES</h2>
-          <div class="section-divider"></div>
-          <p
-            style="
-              max-width: 700px;
-              margin: 20px auto 0;
-              color: rgba(255, 255, 255, 0.7);
-            "
-          >
-            Services essentiels incluant la configuration et la gestion des
-            serveurs, la supervision des équipements réseaux, le support
-            technique, et des stratégies de sauvegarde et récupération des
-            données.
-          </p>
-        </div>
-
-        <div class="row g-4">
-          <div
-            class="col-lg-4 col-md-6"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="service-card">
-              <div class="service-icon"><i class="fas fa-server"></i></div>
-              <h3>Configuration & Gestion de serveurs</h3>
-              <p>
-                Mise en place, configuration et maintenance de serveurs (web,
-                mail, base de données).
-              </p>
-              <span class="service-tag">Déploiement</span>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="service-card">
-              <div class="service-icon"><i class="fas fa-headset"></i></div>
-              <h3>Support technique & Maintenance</h3>
-              <p>
-                Assistance et support technique pour les utilisateurs finaux,
-                résolution des problèmes réseau et système.
-              </p>
-              <span class="service-tag">Support</span>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div class="service-card">
-              <div class="service-icon"><i class="fas fa-database"></i></div>
-              <h3>Sauvegarde & Reprise après sinistre</h3>
-              <p>
-                Solutions de sauvegarde et stratégies de reprise après sinistre
-                pour garantir la continuité des activités.
-              </p>
-              <span class="service-tag">Sécurité</span>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <div class="service-card">
-              <div class="service-icon">
-                <i class="fas fa-cloud-upload-alt"></i>
-              </div>
-              <h3>Services Cloud</h3>
-              <p>
-                Migration vers le cloud, gestion et optimisation des services
-                cloud (AWS, Azure, Google Cloud).
-              </p>
-              <span class="service-tag">Cloud</span>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6"
-            data-aos="fade-up"
-            data-aos-delay="500"
-          >
-            <div class="service-card">
-              <div class="service-icon"><i class="fas fa-code-branch"></i></div>
-              <h3>Gestion des configurations</h3>
-              <p>
-                Écriture de playbooks Ansible en Python pour automatiser la
-                configuration des serveurs.
-              </p>
-              <span class="service-tag">Automation</span>
-            </div>
-          </div>
-          <div
-            class="col-lg-4 col-md-6"
-            data-aos="fade-up"
-            data-aos-delay="600"
-          >
-            <div class="service-card">
-              <div class="service-icon"><i class="fas fa-robot"></i></div>
-              <h3>Automatisation des tâches</h3>
-              <p>
-                Scripts Python pour automatiser les tâches répétitives
-                (sauvegardes, gestion utilisateurs).
-              </p>
-              <span class="service-tag">DevOps</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROJECTS SECTION (NOUVEAU) -->
-    <section id="projets" style="background: #0c0c1a">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <span class="section-tag">Mes réalisations</span>
-          <h2 class="section-title">PROJETS RÉCENTS</h2>
-          <div class="section-divider"></div>
-          <p
-            style="
-              max-width: 700px;
-              margin: 20px auto 0;
-              color: rgba(255, 255, 255, 0.7);
-            "
-          >
-            Découvrez quelques projets sur lesquels j'ai travaillé
-          </p>
-        </div>
-
-        <div class="row g-4">
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="project-card">
-              <div class="project-image">
-                <div class="project-placeholder">
-                  <i class="fas fa-cloud"></i>
-                </div>
-                <div class="project-overlay">
-                  <a href="#" class="btn btn-light btn-sm"
-                    ><i class="fas fa-eye"></i> Voir</a
-                  >
-                </div>
-              </div>
-              <div class="project-info">
-                <h4>Migration Cloud</h4>
-                <p>Migration d'infrastructure vers AWS</p>
-                <span class="project-tech">AWS • Terraform • Docker</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-            <div class="project-card">
-              <div class="project-image">
-                <div class="project-placeholder">
-                  <i class="fas fa-shield-alt"></i>
-                </div>
-                <div class="project-overlay">
-                  <a href="#" class="btn btn-light btn-sm"
-                    ><i class="fas fa-eye"></i> Voir</a
-                  >
-                </div>
-              </div>
-              <div class="project-info">
-                <h4>Audit Sécurité</h4>
-                <p>Audit et renforcement de la sécurité</p>
-                <span class="project-tech">Nessus • Kali • Python</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-            <div class="project-card">
-              <div class="project-image">
-                <div class="project-placeholder">
-                  <i class="fas fa-robot"></i>
-                </div>
-                <div class="project-overlay">
-                  <a href="#" class="btn btn-light btn-sm"
-                    ><i class="fas fa-eye"></i> Voir</a
-                  >
-                </div>
-              </div>
-              <div class="project-info">
-                <h4>Chatbot IA</h4>
-                <p>Assistant virtuel pour le support</p>
-                <span class="project-tech">Python • Rasa • NLP</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- TESTIMONIALS SECTION -->
-    <section>
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <span class="section-tag">Témoignages</span>
-          <h2 class="section-title">CE QUE MES CLIENTS DISENT</h2>
-          <div class="section-divider"></div>
-        </div>
-
-        <div class="row g-4">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="testimonial-card">
-              <div class="testimonial-header">
-                <div class="testimonial-avatar">
-                  <i class="fas fa-user"></i>
-                </div>
-                <div>
-                  <div class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i
-                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                    ><i class="fas fa-star"></i>
-                  </div>
-                  <h4 style="margin: 0">Omog Consulting</h4>
-                  <span class="testimonial-role">CEO</span>
-                </div>
-              </div>
-              <p class="testimonial-text">
-                "Service excellent. Il a optimisé et automatisé nos tâches
-                cruciales comme la sauvegarde et la restauration des données."
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-            <div class="testimonial-card">
-              <div class="testimonial-header">
-                <div class="testimonial-avatar">
-                  <i class="fas fa-user-circle"></i>
-                </div>
-                <div>
-                  <div class="stars">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i
-                    ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                    ><i class="fas fa-star"></i>
-                  </div>
-                  <h4 style="margin: 0">Monica</h4>
-                  <span class="testimonial-role">Entrepreneure</span>
-                </div>
-              </div>
-              <p class="testimonial-text">
-                "Je suis ravie du site web qu'il a créé. Design magnifique,
-                navigation fluide et fonctionnalités sur mesure. Hautement
-                recommandé !"
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA SECTION -->
-    <section id="contact" class="cta-section">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-8" data-aos="fade-right">
-            <h2>Prêt à collaborer ?</h2>
-            <p>
-              Discutons de votre projet et voyons comment je peux vous aider à
-              atteindre vos objectifs.
-            </p>
-          </div>
-          <div class="col-lg-4 text-lg-end" data-aos="fade-left">
-            <a
-              href="mailto:issanzamba@afridevops.online"
-              class="btn btn-primary-custom btn-custom"
-            >
-              <i class="fas fa-paper-plane me-2"></i>Contactez-moi
+  <!-- HERO SECTION -->
+  <section id="accueil" class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1000">
+          <h1>
+            Développeur logiciel Freelance
+          </h1>
+          <p class="hero-subtitle" id="typewriter"></p>
+          <div class="hero-buttons">
+            <a href="https://www.facebook.com/issa.ndi.5/" class="btn btn-primary-custom btn-custom">
+              <i class="fab fa-facebook me-2"></i>Contactez-moi
             </a>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
-            <div class="footer-logo">🚀 afridevops</div>
-            <p style="color: rgba(255, 255, 255, 0.6)">
-              Ingénieur DevOps au service des entreprises africaines
-            </p>
-            <div class="footer-social mt-3">
-              <a href="https://github.com/issaNzamba" target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/issa-nzamba-399a47291"
-                target="_blank"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-              <a href="https://youtube.com/@issanzamba" target="_blank"
-                ><i class="fab fa-youtube"></i
-              ></a>
+          <!-- Stats rapides (NOUVEAU) -->
+          <div class="hero-stats mt-4">
+            <div class="stat-item">
+              <span class="stat-number-hero">+3</span>
+              <span class="stat-label-hero">Ans d'expérience</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number-hero">+10</span>
+              <span class="stat-label-hero">Projets</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number-hero">+05</span>
+              <span class="stat-label-hero">Clients</span>
             </div>
           </div>
-          <div class="col-lg-4 text-center mb-4 mb-lg-0">
-            <h5>Liens rapides</h5>
-            <ul class="footer-links">
-              <li><a href="#accueil">Accueil</a></li>
-              <li><a href="#apropos">À propos</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#projets">Projets</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <div class="col-lg-4 text-center text-lg-end">
-            <h5>Contact</h5>
-            <p class="footer-contact">
-              <i class="fas fa-envelope me-2"></i
-              >issanzamba@afridevops.online<br />
-              <i class="fas fa-map-marker-alt me-2"></i>Sénégal
+        </div>
+      </div>
+    </div>
+    <!-- Indicateur de scroll (NOUVEAU) -->
+    <div class="scroll-indicator">
+      <a href="#services" aria-label="Scroller vers le bas">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Pourquoi me choisir</span>
+        <h2 class="section-title">CE QUE ÇA VOUS APPORTE</h2>
+        <div class="section-divider"></div>
+        <p style="
+              max-width: 700px;
+              margin: 20px auto 0;
+              color: rgba(255, 255, 255, 0.7);
+            ">
+          Un seul interlocuteur pour piloter votre infrastructure, une
+          vision technique cohérente de bout en bout, et des solutions
+          pensées pour grandir avec votre activité.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card">
+            <div class="service-icon"><i class="fas fa-user-tie"></i></div>
+            <h3>Interlocuteur Unique et Réactivité</h3>
+            <p>
+              Un seul point de contact pour tous vos besoins techniques.
+              Vous ne perdez plus de temps à expliquer votre contexte à
+              une nouvelle personne à chaque incident, les réponses
+              arrivent vite et de la bonne source.
             </p>
-            <p class="footer-hours">
-              <i class="fas fa-clock me-2"></i>Lun - Ven: 9h - 18h
+            <span class="service-tag">Proximité</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-diagram-project"></i>
+            </div>
+            <h3>Cohérence Technique et Globale</h3>
+            <p>
+              Serveurs, réseau, sauvegardes et cloud pensés comme un seul
+              système, pas comme des briques isolées. Moins de failles
+              entre les outils, moins de mauvaises surprises.
+            </p>
+            <span class="service-tag">Fiabilité</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-puzzle-piece"></i>
+            </div>
+            <h3>Solution Sur Mesure et Évolutive</h3>
+            <p>
+              Une infrastructure dimensionnée pour votre activité
+              aujourd'hui, et capable de suivre votre croissance demain
+              sans tout reconstruire.
+            </p>
+            <span class="service-tag">Flexibilité</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="apropos">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Qui suis-je ?</span>
+        <h2 class="section-title">À PROPOS DE MOI</h2>
+        <div class="section-divider"></div>
+        <p class="section-description">Passionné par les technologies et l'innovation, je mets mon expertise au service
+          des entreprises.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+          <div class="about-card">
+            <!-- Header avec photo de profil -->
+            <div class="about-header">
+              <div class="about-avatar">
+                <img src="/images/profile.jpg" alt="Issa NZAMBA - Photo de profil" class="profile-photo">
+              </div>
+              <div class="about-status">
+                <span class="status-dot"></span>
+                Disponible
+              </div>
+            </div>
+
+            <div class="info-row">
+              <span class="info-label"><i class="fas fa-user"></i> Nom :</span>
+              <span class="info-value">Issa NZAMBA</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label"><i class="fas fa-map-marker-alt"></i> Résidence :</span>
+              <span class="info-value">Sénégal</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label"><i class="fas fa-envelope"></i> Email :</span>
+              <span class="info-value">issanzamba@afridevops.online</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label"><i class="fas fa-briefcase"></i> Expérience :</span>
+              <span class="info-value">3+ ans</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label"><i class="fas fa-flag"></i> Nationalité :</span>
+              <span class="info-value">Gabonais</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label"><i class="fas fa-graduation-cap"></i> Profession :</span>
+              <span class="info-value">Développeur de logiciel Web</span>
+            </div>
+
+            <div class="about-buttons mt-4">
+              <a href="cv.pdf" class="about-link">
+                CV
+              </a>
+
+              <a href="https://www.facebook.com/issa.ndi.5/" class="about-link">
+                Discuter
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+          <div class="about-image">
+            <img src="images/about-illustration.png" alt="Mon profil" class="main-image">
+
+            <div class="image-overlay">
+              <div class="experience-badge">
+                <span class="exp-number">3+</span>
+                <span class="exp-label">Ans</span>
+              </div>
+            </div>
+            <i class="fas fa-code" style="font-size: 60px;"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="row mt-5 g-4">
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-box">
+            <div class="stat-number">80%</div>
+            <div class="stat-label">Programmation</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-box">
+            <div class="stat-number">60%</div>
+            <div class="stat-label">SysAdmin</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="stat-box">
+            <div class="stat-number">50%</div>
+            <div class="stat-label">Administration Réseaux</div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="stat-box">
+            <div class="stat-number">90%</div>
+            <div class="stat-label">Bureautique</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="competences" style="background: #0c0c1a">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Mes compétences</span>
+        <h2 class="section-title">EXPERTISE TECHNIQUE</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Colonne Gauche - Compétences Techniques -->
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+          <div class="skills-card">
+            <h3 class="skill-category">
+              <i class="fas fa-laptop-code"></i> Compétences Techniques
+            </h3>
+            <p class="skill-subtitle">+3 ans d'expérience</p>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Maîtrise des CMS (WordPress, Shopify)</span><span>80%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Responsive Design (HTML5 / CSS3)</span><span>75%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>JavaScript (et frameworks comme React ou Vue.js)</span><span>60%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 60%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Intégration d'API et systèmes de paiement</span><span>70%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Sécurité de base (SSL, RGPD, sauvegardes)</span><span>70%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Gestion des bases de données et du backend (MySQL, Node.js ou PHP)</span><span>75%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colonne Droite - Compétences Personnelles (CORRIGÉE) -->
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+          <div class="skills-card">
+            <h3 class="skill-category">
+              <i class="fas fa-brain"></i> Compétences Personnelles
+            </h3>
+            <p class="skill-subtitle">En développement continu</p>
+
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Écoute active et empathie</span><span>90%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Communication claire et vulgarisation</span><span>70%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 70%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Force de proposition et conseil</span><span>80%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Gestion du temps et respect des délais</span><span>75%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Autonomie et débrouillardise</span><span>80%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span>Transparence et honnêteté </span><span>100%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="width: 100%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION (NOUVEAU) -->
+  <section id="projets" style="background: #0c0c1a">
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Mes réalisations</span>
+        <h2 class="section-title">PROJETS RÉCENTS</h2>
+        <div class="section-divider"></div>
+        <p style="
+              max-width: 700px;
+              margin: 20px auto 0;
+              color: rgba(255, 255, 255, 0.7);
+            ">
+          Découvrez quelques projets sur lesquels j'ai travaillé
+        </p>
+      </div>
+      <div class="row g-4">
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="btn btn-light btn-sm"><i class="fas fa-eye"></i> Voir</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4>Site E-commerce</h4>
+              <p>Un site e-commerce complet et fonctionnel</p>
+              <span class="project-tech">React • Stripe • Node.js</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-layer-group"></i>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="btn btn-light btn-sm"><i class="fas fa-eye"></i> Voir</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4>Plateforme SaaS</h4>
+              <p>Une application web interactive sur-mesure</p>
+              <span class="project-tech">Vue.js • Laravel • PostgreSQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-placeholder">
+                <i class="fas fa-bolt"></i>
+              </div>
+              <div class="project-overlay">
+                <a href="#" class="btn btn-light btn-sm"><i class="fas fa-eye"></i> Voir</a>
+              </div>
+            </div>
+            <div class="project-info">
+              <h4>Site Vitrine</h4>
+              <p>Site sur-mesure ultra-rapide et responsive</p>
+              <span class="project-tech">HTML5 • TailwindCSS • JS</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SECTION -->
+  <section>
+    <div class="container">
+      <div class="section-header" data-aos="fade-up">
+        <span class="section-tag">Témoignages</span>
+        <h2 class="section-title">CE QUE MES CLIENTS DISENT</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <div>
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <h4 style="margin: 0">Omog Consulting</h4>
+                <span class="testimonial-role">CEO</span>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Service excellent. Il a optimisé et automatisé nos tâches
+              cruciales comme la sauvegarde et la restauration des données."
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+          <div class="testimonial-card">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar">
+                <i class="fas fa-user-circle"></i>
+              </div>
+              <div>
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i>
+                </div>
+                <h4 style="margin: 0">Monica</h4>
+                <span class="testimonial-role">Entrepreneure</span>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              "Je suis ravie du site web qu'il a créé. Design magnifique,
+              navigation fluide et fonctionnalités sur mesure. Hautement
+              recommandé !"
             </p>
           </div>
         </div>
       </div>
-      <div class="footer-bottom">
-        <div class="container">
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section id="contact" class="cta-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8" data-aos="fade-right">
+          <h2>Prêt à collaborer ?</h2>
           <p>
-            &copy; 2026 afridevops.online – Actualité technologique africaine.
-            Tous droits réservés.
+            Discutons de votre projet et voyons comment je peux vous aider à
+            atteindre vos objectifs.
           </p>
-          <p class="footer-version">Version 2.0.0-dev</p>
+        </div>
+        <div class="col-lg-4 text-lg-end" data-aos="fade-left">
+          <a href="https://www.facebook.com/issa.ndi.5/" class="btn btn-primary-custom btn-custom">
+            <i class="fab fa-facebook me-2"></i>Contactez-moi
+          </a>
         </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <!-- BACK TO TOP (NOUVEAU) -->
-    <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
-      <i class="fas fa-arrow-up"></i>
-    </button>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 text-center text-lg-start mb-4 mb-lg-0">
+          <div class="footer-logo">Issa Nzamba</div>
+          <p style="color: rgba(255, 255, 255, 0.6)">
+            Développeur web au service des PME & startups 
+          </p>
+          <div class="footer-social mt-3">
+            <a href="https://github.com/issaNzamba" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/issa-nzamba-399a47291" target="_blank"><i
+                class="fab fa-linkedin"></i></a>
+            <a href="https://youtube.com/@issanzamba" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4 text-center mb-4 mb-lg-0">
+          <h5>Liens rapides</h5>
+          <ul class="footer-links">
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 text-center text-lg-end">
+          <h5>Contact</h5>
+          <p class="footer-contact">
+            <i class="fas fa-envelope me-2"></i>issanzamba@afridevops.online<br />
+            <i class="fas fa-map-marker-alt me-2"></i>Sénégal
+          </p>
+          <p class="footer-hours">
+            <i class="fas fa-clock me-2"></i>Lun - Ven: 9h - 18h
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>
+          &copy; 2026 Issa Nzamba – Portfolio.
+          Tous droits réservés.
+        </p>
+        <p class="footer-version">Version 1.0.2</p>
+      </div>
+    </div>
+  </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- BACK TO TOP (NOUVEAU) -->
+  <button id="backToTop" class="back-to-top" aria-label="Retour en haut">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
-    <!-- AOS Animation JS (NOUVEAU) -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- Custom Script -->
-    <script src="/js/script.js"></script>
-  </body>
+  <!-- AOS Animation JS (NOUVEAU) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Custom Script -->
+  <script src="/js/script.js"></script>
+</body>
+
 </html>
-<- Ajout du preloader, typewriter et animations Test déploiement Gitflow jeu. 02 juil. 2026 18:00:02 GMT -->

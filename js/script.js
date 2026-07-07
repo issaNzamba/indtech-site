@@ -137,9 +137,10 @@ const typewriterElement = document.getElementById('typewriter');
 
 if (typewriterElement) {
     const texts = [
-        'Issa NZAMBA, Développeur Web',
-        'Spécialiste Full-Stack',
-        'Expert en Gestion de Projets',
+        'Je crée des sites web sur-mesure,',
+        'performants et simples à gérer,',
+        'pour aider votre entreprise à dévelloper ',
+        'sa présence en ligne'
     ];
     let textIndex = 0;
     let charIndex = 0;
