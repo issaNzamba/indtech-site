@@ -843,6 +843,7 @@ section {
     width: 70px;
     height: 70px;
     border-radius: 50%;
+    overflow: hidden; /* NOUVEAU : Coupe les coins de l'image qui dépassent du cercle */
     background: linear-gradient(135deg, var(--accent), var(--accent-dark));
     display: flex;
     align-items: center;
@@ -851,6 +852,15 @@ section {
     font-weight: 700;
     color: white;
     flex-shrink: 0;
+}
+
+/* La nouvelle classe pour l'image de l'avatar */
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Recadre l'image proprement sans la déformer */
+  object-position: center; /* Centre le visage si l'image est recadrée */
+  display: block;
 }
 
 .testimonial-role {
