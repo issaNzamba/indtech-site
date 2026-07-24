@@ -10,8 +10,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      
+      - uses: actions/checkout@v5   # ← Mise à jour : v5 au lieu de v3
+
       - name: Déploiement SSH
         uses: appleboy/ssh-action@v0.1.5
         with:
